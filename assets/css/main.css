@@ -1012,7 +1012,7 @@ section {
   }
 }
 .about h3 {
-  color: var(--color-secondary);
+  color: #fff;
   font-family: var(--font-secondary);
   font-weight: 300;
   font-size: 32px;
@@ -1033,7 +1033,7 @@ section {
   background: none;
   font-size: 18px;
   font-weight: 400;
-  color: var(--color-secondary);
+  color: #fff;
   padding: 12px 0;
   margin-bottom: -2px;
   border-radius: 0;
@@ -1053,13 +1053,13 @@ section {
   font-size: 18px;
   margin: 0;
   font-weight: 700;
-  color: var(--color-secondary);
+  color: #fff;
 }
 .about .tab-content i {
   font-size: 22px;
   line-height: 0;
   margin-right: 8px;
-  color: var(--color-primary);
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -1168,7 +1168,7 @@ section {
 }
 .onfocus .video-play {
   min-height: 400px;
-  background: linear-gradient(rgba(var(--color-black-rgb), 0.4), rgba(var(--color-black-rgb), 0.7)), url("../img/onfocus-video-bg.jpg") center center;
+  background: linear-gradient(rgba(var(--color-black-rgb), 0.4), rgba(var(--color-black-rgb), 0.7)), url("../img/bg.jpg") center center;
   background-size: cover;
 }
 .onfocus .content {
@@ -1208,7 +1208,8 @@ section {
   font-size: 16px;
   letter-spacing: 1px;
   padding: 12px 24px;
-  border-radius: 5px;
+  border-radius: 0px;
+  margin-right: 20px;
   transition: 0.3s;
   display: -nline-flex;
   align-items: center;
@@ -1241,6 +1242,7 @@ section {
   overflow: hidden;
 }
 .onfocus .play-btn:before {
+
   content: "";
   position: absolute;
   width: 120px;
@@ -1676,6 +1678,7 @@ background: #000;
 # F.A.Q Section
 --------------------------------------------------------------*/
 .faq{
+  background: #000;
   padding-top: 135px;
 }
 
@@ -1687,16 +1690,17 @@ background: #000;
 .faq .content h3 {
   font-weight: 400;
   font-size: 34px;
-  color: var(--color-secondary);
+  color: #fff;
 }
 .faq .content h4 {
   font-size: 20px;
   font-weight: 700;
   margin-top: 5px;
+  color: #fff;
 }
 .faq .content p {
   font-size: 15px;
-  color: var(--color-gray);
+  color: #fff;
 }
 .faq .img {
   background-size: cover;
@@ -1717,9 +1721,9 @@ background: #000;
   font-weight: 600;
   border: 0;
   font-size: 18px;
-  color: var(--color-default);
+  color: #fff;
   text-align: left;
-  background: var(--color-white);
+  background: #000;
   box-shadow: none;
   border-radius: 5px;
 }
@@ -1745,7 +1749,8 @@ background: #000;
   padding: 0 30px 25px 60px;
   border: 0;
   border-radius: 5px;
-  background: var(--color-white);
+  background: #000;
+  color: #fff;
   box-shadow: none;
 }
 
@@ -1849,80 +1854,53 @@ background: #000;
 }
 
 /*--------------------------------------------------------------
-# Team Section
+# Team
 --------------------------------------------------------------*/
-.team
-{
+.team {
   background: #000;
 }
-.team .team-member .member-img {
-  border-radius: 8px;
-  overflow: hidden;
+
+.team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 30px 20px;
+  background: #fff;
 }
-.team .team-member .social {
-  position: absolute;
-  left: 0;
-  top: -18px;
-  right: 0;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.team .member img {
+  max-width: 100%;
+  max-height: 600px;
+  margin: 0 0 30px 0;
 }
-.team .team-member .social a {
-  transition: color 0.3s;
-  color: var(--color-white);
-  background: var(--color-primary);
-  margin: 0 5px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
+.team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+
+}
+.team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+.team .member p {
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #aaaaaa;
+}
+.team .member .social {
+  margin-top: 15px;
+}
+.team .member .social a {
+  color: #919191;
   transition: 0.3s;
 }
-.team .team-member .social a i {
-  line-height: 0;
-  font-size: 16px;
+.team .member .social a:hover {
+  color: #16df7e;
 }
-.team .team-member .social a:hover {
-  background: var(--color-primary-light);
-}
-.team .team-member .social i {
+.team .member .social i {
   font-size: 18px;
   margin: 0 2px;
-}
-.team .team-member .member-info {
-  padding: 30px 15px;
-  text-align: center;
-  box-shadow: 0px 2px 15px rgba(var(--color-black-rgb), 0.1);
-  background: var(--color-white);
-  margin: -50px 20px 0 20px;
-  position: relative;
-  border-radius: 8px;
-}
-.team .team-member .member-info h4 {
-  font-weight: 400;
-  margin-bottom: 5px;
-  font-size: 24px;
-  color: var(--color-secondary);
-}
-.team .team-member .member-info span {
-  display: block;
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--color-gray);
-}
-.team .team-member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
-  color: var(--color-gray);
-}
-.team .team-member:hover .social {
-  opacity: 1;
 }
 
 /*--------------------------------------------------------------
@@ -1992,6 +1970,10 @@ background: #000;
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+.contact {
+  background: #000;
+}
+
 .contact .map {
   margin-bottom: 40px;
 }
@@ -2008,9 +1990,10 @@ background: #000;
 .contact .info h3 {
   font-weight: 600;
   font-size: 24px;
+  color: #fff;
 }
 .contact .info p {
-  color: var(--color-secondary-light);
+  color: #fff;
   margin-bottom: 30px;
   font-size: 15px;
 }
@@ -2021,7 +2004,7 @@ background: #000;
 }
 .contact .info-item i {
   font-size: 24px;
-  color: var(--color-primary);
+  color: #fff;
   transition: all 0.3s ease-in-out;
   margin-right: 20px;
 }
@@ -2030,17 +2013,17 @@ background: #000;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: var(--color-secondary);
+  color: #fff;
 }
 .contact .info-item p {
   padding: 0;
   margin-bottom: 0;
   font-size: 14px;
-  color: var(--color-secondary-light);
+  color: #fff;
 }
 .contact .php-email-form {
   width: 100%;
-  background: var(--color-white);
+  background: #000;
 }
 .contact .php-email-form .form-group {
   padding-bottom: 8px;
@@ -2086,6 +2069,8 @@ background: #000;
   border-radius: 0px;
   box-shadow: none;
   font-size: 14px;
+  background: #000;
+
 }
 .contact .php-email-form input[type=text]:focus, .contact .php-email-form input[type=email]:focus, .contact .php-email-form textarea:focus {
   border-color: var(--color-secondary-light);
@@ -2129,6 +2114,8 @@ background: #000;
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
+
+
 .portfolio-details {
   padding-top: 40px;
 }
@@ -2186,6 +2173,10 @@ background: #000;
 /*--------------------------------------------------------------
 # Blog Home Posts List
 --------------------------------------------------------------*/
+.blog {
+  background: #000;
+}
+
 .blog .posts-list article {
   box-shadow: 0 4px 16px rgba(var(--color-black-rgb), 0.1);
   padding: 30px;
