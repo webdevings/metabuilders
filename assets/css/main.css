@@ -205,6 +205,54 @@ section {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
+.headerhero {
+  padding: 15px 0;
+  background: transparent;
+
+  transition: all 0.5s;
+  z-index: 997;
+}
+.headerhero.sticked {
+  background: #000;
+  box-shadow: 0px 2px 20px rgba(var(--color-secondary-rgb), 0.1);
+}
+.headerhero .logo img {
+  max-height: 40px;
+  margin-right: 6px;
+}
+.headerhero .logo h1 {
+  font-size: 32px;
+  font-weight: 300;
+  color: #fff;
+  font-family: var(--font-secondary);
+}
+.headerhero .logo h1 span {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+.headerhero .btn-getstarted, .header .btn-getstarted:focus {
+  font-size: 16px;
+  color: #fff;
+  background: #750550;
+  padding: 8px 23px;
+  border-radius: 0px;
+  transition: 0.3s;
+  font-family: var(--font-secondary);
+}
+.headerhero .btn-getstarted:hover, .header .btn-getstarted:focus:hover {
+  color: var(--color-white);
+  background: rgba(var(--color-primary-rgb), 0.85);
+}
+@media (max-width: 1279px) {
+  .headerhero .btn-getstarted, .header .btn-getstarted:focus {
+    margin-right: 50px;
+  }
+}
+
+
+
+
 .header {
   padding: 15px 0;
   background: #000;
@@ -870,7 +918,7 @@ section {
 }
 .hero-static:before {
   content: "";
-  background: rgba(var(--color-black-rgb), 0.25);
+  background: rgba(var(--color-black-rgb), 0.45);
   position: absolute;
   inset: 0;
 }
@@ -883,7 +931,7 @@ section {
   font-family: var(--font-secondary);
 }
 .hero-static h2 span {
-  color: #ac6996;
+  color: #c79bb9;
 }
 .hero-static p {
   color: #fff;
@@ -910,22 +958,22 @@ section {
   transition: 0.5s;
   margin-left: 25px;
   font-family: var(--font-secondary);
-  color: var(--color-secondary);
-  font-weight: 600;
+color: #fff;
+font-weight: 600;
 }
 .hero-static .btn-watch-video i {
-  color: #ac6996;
+  color:  #c79bb9;
   font-size: 32px;
   transition: 0.3s;
   line-height: 0;
   margin-right: 8px;
 }
 .hero-static .btn-watch-video:hover {
-  color: #c79bb9;
+  color: #ac6996;
 
 }
 .hero-static .btn-watch-video:hover i {
-  color: #c79bb9;
+  color: #ac6996;
 }
 @media (max-width: 640px) {
   .hero-static h2 {
@@ -2724,15 +2772,18 @@ background: #000;
 }
 .footer .footer-content .footer-newsletter form {
   margin-top: 30px;
-  background: var(--color-white);
+  background: #000;
   padding: 6px 10px;
   position: relative;
-  border-radius: 4px;
+  border-radius: 0px;
 }
 .footer .footer-content .footer-newsletter form input[type=email] {
   border: 0;
   padding: 4px;
   width: calc(100% - 110px);
+  background: #000;
+  color: #fff;
+
 }
 .footer .footer-content .footer-newsletter form input[type=email]:focus-visible {
   outline: none;
@@ -2746,10 +2797,10 @@ background: #000;
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: var(--color-primary);
+  background: #750550;
   color: var(--color-white);
   transition: 0.3s;
-  border-radius: 0 4px 4px 0;
+  border-radius: 0px;
 }
 .footer .footer-content .footer-newsletter form input[type=submit]:hover {
   background: rgba(var(--color-primary-rgb), 0.85);
