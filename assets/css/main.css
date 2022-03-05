@@ -2231,6 +2231,8 @@ background: #2e0220;
   box-shadow: 0 4px 16px rgba(var(--color-black-rgb), 0.1);
   padding: 30px;
   height: 100%;
+  border: 2px solid #fff;
+
 }
 .blog .posts-list article + article {
   margin-top: 60px;
@@ -2247,7 +2249,7 @@ background: #2e0220;
   margin: 20px 0 0 0;
 }
 .blog .posts-list .title a {
-  color: var(--color-secondary);
+  color: #fff;
   transition: 0.3s;
 }
 .blog .posts-list .title a:hover {
@@ -2275,22 +2277,26 @@ background: #2e0220;
   color: rgba(var(--color-primary-rgb), 0.8);
 }
 .blog .posts-list .meta-top a {
-  color: var(--color-gray);
+  color: #fff;
   font-size: 14px;
   display: inline-block;
   line-height: 1;
+}
+
+.blog .posts-list p {
+  color: #fff;
 }
 .blog .posts-list .content {
   margin-top: 20px;
 }
 .blog .posts-list .read-more a {
   display: inline-block;
-  background: var(--color-primary);
+  background: #750550;
   color: var(--color-white);
   padding: 8px 30px;
   transition: 0.3s;
   font-size: 14px;
-  border-radius: 4px;
+  border-radius: 0px;
 }
 .blog .posts-list .read-more a:hover {
   background: rgba(var(--color-primary-rgb), 0.8);
@@ -2321,6 +2327,7 @@ background: #2e0220;
   font-size: 22px;
   margin-top: 30px;
   font-weight: bold;
+  color: #fff;
 }
 .blog .blog-details .content blockquote {
   overflow: hidden;
