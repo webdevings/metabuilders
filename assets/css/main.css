@@ -910,7 +910,7 @@ section {
 --------------------------------------------------------------*/
 .hero-static {
   width: 100%;
-  min-height: 60vh;
+  min-height: 70vh;
   background: url("../img/bg.jpg") center center;
   background-size: cover;
   position: relative;
