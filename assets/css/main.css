@@ -2120,6 +2120,7 @@ background: #2e0220;
   box-shadow: none;
   font-size: 14px;
   background: #000;
+  color: #fff;
 
 }
 .contact .php-email-form input[type=text]:focus, .contact .php-email-form input[type=email]:focus, .contact .php-email-form textarea:focus {
